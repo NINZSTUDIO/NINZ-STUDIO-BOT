@@ -16,7 +16,7 @@ export function parseMathInput(input) {
   // Ganti log(x) dengan Math.log(x)
   parsed = parsed.replace(/log\(([^)]+)\)/g, (_, val) => `Math.log(${val})`);
 
-  // Ganti ekspresi derajat ke radian: sin30° → sin(30 * Math.PI / 180)
+  // Ganti sin30° → Math.sin(30 * Math.PI / 180)
   parsed = parsed.replace(/(sin|cos|tan)\s*(\d+)°/g, (_, fn, deg) => `Math.${fn}(${deg} * Math.PI / 180)`);
 
   // Ganti simbol × dan ÷ dengan * dan /
