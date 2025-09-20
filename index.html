@@ -1,0 +1,45 @@
+
+---
+
+## 🧮 `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>🤖NINZ STUDIO BOT MATEMATIKA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="glitch-text">LOADING, SABAR YAA😊...</div>
+  </div>
+
+  <main style="display:none;">
+    <h1>🤖NINZ STUDIO BOT MATEMATIKA</h1>
+
+    <section id="calculator">
+      <h2>Kalkulator</h2>
+      <input type="text" id="expression" placeholder="Masukkan ekspresi..." />
+      <button onclick="calculate()">Hitung</button>
+      <div id="result"></div>
+    </section>
+
+    <section id="formulas">
+      <h2>Rumus Matematika</h2>
+      <select id="topic" onchange="showFormula()">
+        <option value="">Pilih topik</option>
+        <option value="aljabar">Aljabar</option>
+        <option value="geometri">Geometri</option>
+        <option value="trigonometri">Trigonometri</option>
+        <option value="kalkulus">Kalkulus</option>
+        <option value="statistik">Statistik</option>
+      </select>
+      <div id="formula-display"></div>
+    </section>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
