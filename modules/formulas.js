@@ -21,4 +21,4 @@ export const formulas = {
     { name: "Sinus Sudut Ganda", formula: "sin(2θ) = 2sinθcosθ" },
     { name: "Cosinus Sudut Ganda", formula: "cos(2θ) = cos²θ - sin²θ" },
     { name: "Aturan Sinus", formula: "a/sin A = b/sin B = c/sin C" },
-    { name: "Aturan Cosinus", formula
+    { name: "Aturan Cosinus", formula: "c² = a² + b² - 2ab cos C
